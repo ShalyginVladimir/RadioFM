@@ -27,6 +27,18 @@ public class RadioTest {
     }
 
     @Test
+    public void minus() {
+        Radio radio = new Radio();
+        radio.setCurrentStation(5);
+
+        radio.prev();
+
+        int actual = radio.getCurrentStation();
+        int expected = 4;
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
     public void transition() {
         Radio radio = new Radio();
         radio.setCurrentStation(9);

@@ -32,12 +32,6 @@ public class Radio {
         this.currentStation = currentStation;
     }
 
-    public void increaseVolume() {
-        if (currentVolume < 10) {
-            currentVolume = currentVolume + 1;
-        }
-    }
-
     public int getCurrentVolume() {
         return currentVolume;
     }
