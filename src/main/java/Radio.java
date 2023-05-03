@@ -3,11 +3,11 @@ public class Radio {
     private int currentVolume;
 
     public void next() {
-        if (currentStation !=9) {
+        if (currentStation != 9) {
             currentStation++;
             return;
         }
-            currentStation = 0;
+        currentStation = 0;
     }
 
     public void prev() {
@@ -23,11 +23,7 @@ public class Radio {
     }
 
     public void setCurrentStation(int currentStation) {
-        if (currentStation < 0) {
-        }
 
-        if (currentStation > 9) {
-        }
 
         this.currentStation = currentStation;
     }
@@ -37,11 +33,7 @@ public class Radio {
     }
 
     public void setCurrentVolume(int currentVolume) {
-        if (currentVolume < 0) {
-        }
 
-        if (currentVolume > 10) {
-        }
 
         this.currentVolume = currentVolume;
     }

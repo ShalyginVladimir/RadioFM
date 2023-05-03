@@ -6,7 +6,6 @@ public class RadioTest {
     @Test
     public void test() {
         Radio radio = new Radio();
-
         radio.setCurrentStation(6);
 
         int actual = radio.getCurrentStation();
